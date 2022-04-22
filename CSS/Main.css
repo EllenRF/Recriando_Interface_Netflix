@@ -9,7 +9,7 @@
 }
 body{
   background: var(--preto);
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Arial', Times, serif;
   color: white;
 }
 header .container {
@@ -35,8 +35,8 @@ header nav a:hover{
 /*filme principal*/
 .principal{
  font-size: 16px; 
- background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)),url('/img/heartstopper-1-temporada-online.jpg');
-  height: 400px;
+ background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)),url('/img/heartstopper.jpg');
+  height: 600px;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -68,4 +68,18 @@ header nav a:hover{
 }
 .btn i{
   margin-right: 8px;
+}
+.container{
+  margin-left: 20px;
+}
+.principal .container{
+  width: 70%;
+}
+.box-filme{
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.carrosel-filmes{
+  margin-top: 5px;
 }

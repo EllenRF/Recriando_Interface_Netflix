@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/Main.css" />
-    <script
-      src="https://kit.fontawesome.com/e180b7e473.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="CSS/owl/owl.carousel.min.css" />
+    <link rel="stylesheet" href="CSS/owl/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="CSS/responsive.css" />
     <title>Netflix</title>
   </head>
   <body>
@@ -17,9 +16,9 @@
         <h2 class="logo">NETFLIX</h2>
         <nav>
           <a href="#">Inicio</a>
-          <a href="#">Séries</a>
-          <a href="#">Filmes</a>
-          <a href="#">Documentários</a>
+          <a onclick="series()">Séries</a>
+          <a onclick="filmes()">Filmes</a>
+          <a onclick="documentarios()">Documentários</a>
         </nav>
       </div>
     </header>
@@ -33,16 +32,60 @@
             descobrem que são mais que apenas amigos e precisam lidar com as
             dificuldades da vida escolar e amorosa.
           </p>
-        </div>
-        <div class="btns">
-          <button type="button" class="btn">
+          <button type="button" class="btn" onclick="assista()">
             <i class="fa-solid fa-play"></i> ASSISTIR AGORA
           </button>
-          <button type="button" class="btn">
+          <button type="button" class="btn" onclick="info()">
             <i class="fa-solid fa-circle-info"></i> MAIS INFORMAÇÕES
           </button>
         </div>
       </div>
     </main>
+
+    <div class="carrosel-filmes">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img class="box-filme" src="img/mini1.jpg" alt="Grey's Anatomy" />
+        </div>
+        <div class="item">
+          <img class="box-filme" src="img/mini2.jpg" alt="Lucifer" />
+        </div>
+        <div class="item">
+          <img class="box-filme" src="img/mini3.jpg" alt="Euphoria" />
+        </div>
+        <div class="item">
+          <img class="box-filme" src="img/mini4.jpg" alt="Kimetsu no Yaiba" />
+        </div>
+        <div class="item">
+          <img class="box-filme" src="img/mini5.jpg" alt="Eternos" />
+        </div>
+        <div class="item">
+          <img class="box-filme" src="img/mini6.jpg" alt="Shang-chi" />
+        </div>
+        <div class="item">
+          <img class="box-filme" src="img/mini7.jpg" alt="Batman" />
+        </div>
+        <div class="item">
+          <img class="box-filme" src="img/mini8.jpg" alt="Sing 2" />
+        </div>
+        <div class="item">
+          <img class="box-filme" src="img/mini9.jpg" alt="Flash" />
+        </div>
+        <div class="item">
+          <img
+            class="box-filme"
+            src="img/mini10.jpg"
+            alt="Craig of the Creek"
+          />
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/e180b7e473.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="Js/owl/jquery.min.js"></script>
+    <script src="Js/owl/owl.carousel.min.js"></script>
+    <script src="js/setup.js"></script>
   </body>
 </html>
